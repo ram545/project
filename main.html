@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Library management system</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+        <link rel="stylesheet" href="css/main.css" type="text/css" media="all">
+	    <link href="//fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <header id="header_main">
+        <div class="clearfix float-my-children">
+            <img src="images/bookshelf-128.png"/>
+            <h1>Library Management System</h1>
+        </div> 
+        <div id="nav">
+           <ul>
+               <li><a href="#" title="home" id="home"><i class="fa fa-home fa-fw"></i></a></li>
+               <li><a href="#" title="search books" id="search">Search</a></li>
+               <li><a href="#" title="Return Books" id="return">Return</a></li>
+               <li><a href="#" title="Renew Books" id="renew">Renew</a></li>
+               <li id="dropdown"><a href="#"><i class="fa fa-user"></i>&nbsp;UserName</a>
+                  <ul>
+                    <li><a href="#" id="profile">My Profile</a></li>
+                    <li><a href="#" id="password">Change Password</a></li>
+                    <li><a href="#" id="feedback">Feedback</a></li>  
+                    <li><a href="login.html">LogOut</a></li>
+                  </ul>
+               </li>
+           </ul>
+        </div>
+        </header>
+        <div>
+        <div id="container_main">
+            <h1>Welcome to the Digital Library</h1>
+            <p><i class="fa fa-dot-circle-o"></i>&nbsp;&nbsp;A digital library is a collection of documents in organized electronic form, available on the Internet or on CD-ROM (compact-disk read-only memory) disks. Depending on the specific library, a user may be able to access magazine articles, books, papers, images, sound files, and videos.</p>
+            <p><i class="fa fa-dot-circle-o"></i>&nbsp;&nbsp;Some institutions have begun the task of converting classic books to electronic format for distribution on the Internet. Some files can be viewed directly in HTML format; others can be downloaded in PDF format and printed. Some publishers keep electronic files of books and produce them one unit at a time in printed and bound form on demand. </p>
+            <p><i class="fa fa-dot-circle-o"></i>&nbsp;&nbsp;It also functions as a traditional library allowing you to keep tabs on the books you want reserve them,checking due dates,renewing books,feedback forms or requesting replacement of old books.This project is a small step towards digitalizing the library.</p>
+        </div>
+        <div id="search_content">
+            <form id="form1">
+                <select>
+                    <option>Library Catalog</option>
+                    <option>Title</option>
+                    <option>Subject</option>
+                    <option>Author</option>
+                </select>
+                <input type="text" placeholder="Search..">
+                <input type="submit" value="Go">
+            </form> 
+        </div>
+         <div id="renew_content">
+            <form id="form" class="renew">
+                     <h1>Renew Book</h1>
+                     <input type="text" placeholder="Id Number">
+                     <input type="text" placeholder="Book Name">
+                     <input type="text" placeholder="Due Date">
+                     <input type="text" placeholder="Present Date">
+                     <input type="submit" value="Renew">
+            </form> 
+        </div>
+        <div id="return_content">
+            <form id="form">
+                     <h1>Return Book</h1>
+                     <input type="text" placeholder="Id Number">
+                     <input type="text" placeholder="Book Name">
+                     <input type="text" placeholder="Due Date">
+                     <input type="text" placeholder="Present Date">
+                     <input type="submit" value="Return">
+            </form> 
+        </div>
+        <div id="change_password">
+             <form id="form2">
+                 <h1>Change Password</h1>
+                 <input type="text" placeholder="Current password">
+                 <input type="text" placeholder="New password">
+                 <input type="text" placeholder="Re-enter new password">
+                 <input type="submit" value="Submit">
+             </form>
+        </div>
+        <div id="feedback_form">
+            <form id="form3">
+                <h1>Feedback Form</h1>
+                <p>Thank you for completing our feedback form.Your feedback helps us understand what we do well and where we can improve.</p>
+                <input type="text" placeholder="name">
+                <input type="text" placeholder="Id Number">
+                <p>Please describe your experience</p>
+                <ul id="rating">
+                    <li><input type="radio" name="rating" value="1">Very Good</li>
+                    <li><input type="radio" name="rating" value="2">Good</li>
+                    <li><input type="radio" name="rating" value="3">Neutral</li>
+                    <li><input type="radio" name="rating" value="4">Poor</li>
+                    <li><input type="radio" name="rating" value="5">Very Poor</li>
+                </ul>
+                <textarea placeholder="Additional Comments" rows="5" cols="54"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div id="my_profile">
+            <form id="form4">
+                <h1>My Profile</h1>
+                <input type="text" placeholder="name">
+                <input type="text" placeholder="email">
+                <input type="text" placeholder="date of birth">
+                <input type="text" placeholder="phone no">
+                <textarea placeholder="address" rows="5" cols="55"></textarea>
+                <input type="submit" value="Update">
+            </form>
+        </div>    
+        </div>
+        <div class="footer_login">
+            <p> &copy; 2016 Library Member Login Form. All Rights Reserved | Design by <a href="#">RamaKrishna</a></p>
+	    </div>
+    </body>
+</html>

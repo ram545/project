@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login page</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+        <link rel="stylesheet" href="css/login.css" type="text/css" media="all">
+	    <link href="//fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/login.js"></script>
+</head>
+<body>
+<div id="main_cont">
+    <div id=log>
+    <h1><oblique>Library Login Form</oblique></h1>
+	<div class="container_login">
+		<div class="login_login">
+			<h2>Sign In</h2> 
+			<form id="log_in_form" autocomplete="off" action="login.php" method="POST"> 
+                		<input type="text" Name="username" id="user" placeholder="Username" required>
+				<input type="password" Name="password" id="pass" placeholder="Password" required>
+				<div class="send-button_login">
+					<input type="submit" value="Sign In" id="sign_in" onclick="location.href='main.html';">
+				</div>
+          		  </form>
+			<a href="#" id="forgot">Forgot Password?</a>
+			<div class="clear"></div>
+		</div>
+        <div class="register_login">
+			<h2>Sign Up</h2>
+			<form id="sign_up_form" autocomplete="off" action="signup.php" method="POST">
+				<input type="text" Name="username" id="name" placeholder="Name" required>
+				<input type="email" Name="email" id="email" placeholder="Email" required email>
+                		<input type="password" Name="password" id="up_pass" placeholder="Password" required>
+				<input type="text" Name="phonenumber" id="phone" placeholder="Phone Number" required>
+			<div class="send-button_login">
+			     <input type="submit" value="Sign Up" id="sign_up">
+          	       </div>
+          	       </form>
+		       <p>By creating an account, you agree to our <a href="#">Terms And Conditions</a></p>
+		       <div class="clear"></div>
+		</div>
+		<div class="clear"></div>
+    </div>
+        <div class="footer_login">
+            <p> &copy; 2016 Library Member Login Form. All Rights Reserved | Design by <a href="#">RamaKrishna</a></p>
+        </div>
+    </div>
+    <div id="forgot_password">
+        <h1>Forgot Password</h1>
+        <div class="container_login">
+            <div class="forgot_pass">
+                <form>
+                    <h2>Enter the email with which u have registered to our site and a password reset link will be sent to your email</h2>
+                    <input type="email" Name="email" id="phone" placeholder="Email" required>
+                    <div class="send-button_login">
+			   <input type="submit" value="submit" id="check">
+                    </div>
+                    <a href="#" id="log_ret">Return to login</a>
+			        <div class="clear"></div>
+                </form>
+            </div>
+        </div>
+        <div class="footer_login" id="footer">
+            <p> &copy; 2016 Library Member Login Form. All Rights Reserved | Design by <a href="#">RamaKrishna</a></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
